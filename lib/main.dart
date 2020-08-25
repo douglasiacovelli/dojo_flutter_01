@@ -49,16 +49,25 @@ class MyHomePage extends StatelessWidget {
             // horizontal).
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Padding(padding: ,),
-              Text(
-                'Dojo remoto funciona?',
-              ),
+              Padding(padding: EdgeInsets.all(10.0)),
               Flex(
                 direction: Axis.horizontal,
                 children: <Widget>[
-                  Text("Texto 2"),
+                  Text(
+                    "Texto titulo",
+                    style: TextStyle(fontSize: 30.0),
+                  ),
+                  Text(
+                    "Text descritivo",
+                    style: TextStyle(fontSize: 20.0),
+                  )
                 ],
-              )
+              ),
+              Column(children: <Widget>[
+                Container(
+                  color: Colors.red[100],
+                )
+              ])
             ],
           )
         ],
