@@ -51,11 +51,24 @@ class MyHomePage extends StatelessWidget {
           ),
           Container(
             color: Colors.black12,
-            height: 703,
+            height: 640,
             child: ListView(
               children: <Widget>[
-                Container(
-                  child: Text("Texto 1"),
+                Card(
+                  child: Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: 20.0,
+                          width: 20.0,
+                          child: Image.network(
+                              "https://raw.githubusercontent.com/flutter-rus/flutter-rus.github.io/master/images/logo.png"),
+                        ),
+                        Text("Dev Flutter"),
+                      ],
+                    ),
+                  ),
                 ),
                 Container(
                   child: Text("Texto 2"),
