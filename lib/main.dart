@@ -32,26 +32,41 @@ class MyHomePage extends StatelessWidget {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         children: <Widget>[
-          Padding(padding: EdgeInsets.all(10.0)),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Flex(
-              direction: Axis.vertical,
-              children: <Widget>[
-                Text(
-                  "Texto titulo",
-                  style: TextStyle(fontSize: 30.0),
-                ),
-                Text(
-                  "Text descritivo",
-                  style: TextStyle(fontSize: 20.0),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 8.0,
                 )
               ],
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(
+                top: 40.0,
+                left: 16.0,
+                right: 16.0,
+                bottom: 16.0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Text(
+                    "Texto titulo",
+                    style: TextStyle(fontSize: 30.0),
+                  ),
+                  Text(
+                    "Text descritivo",
+                    style: TextStyle(fontSize: 20.0),
+                  )
+                ],
+              ),
             ),
           ),
           Container(
             color: Colors.black12,
-            height: 640,
+            height: 560,
             child: ListView(
               children: <Widget>[
                 Card(
@@ -60,8 +75,8 @@ class MyHomePage extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          height: 20.0,
-                          width: 20.0,
+                          height: 60.0,
+                          width: 60.0,
                           child: Image.network(
                               "https://raw.githubusercontent.com/flutter-rus/flutter-rus.github.io/master/images/logo.png"),
                         ),
