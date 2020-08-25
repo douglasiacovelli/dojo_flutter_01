@@ -49,17 +49,20 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
           ),
-          Column(
-            children: <Widget>[
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  color: Colors.red[100],
-                  child: Text("teste"),
+          Container(
+            color: Colors.black12,
+            height: 703,
+            child: ListView(
+              children: <Widget>[
+                Container(
+                  child: Text("Texto 1"),
                 ),
-              )
-            ],
-          )
+                Container(
+                  child: Text("Texto 2"),
+                ),
+              ],
+            ),
+          ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
